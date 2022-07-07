@@ -19,3 +19,19 @@ c1 <- read_csv2("podatki/1c.csv",
                 col_names=c("COMPANYNAME","ABS CHANGE(+10k)"),
                 skip=1, na="-",
                 locale=locale(encoding="Windows-1250"))
+
+a21 <- read_csv2("podatki/2a1.csv",
+                 col_names=c("COMPANYNAME","YEAR", "GROSS SALES"),
+                 skip=1, na="-",
+                 locale=locale(encoding="Windows-1250"))
+
+a22 <- a21 <- read_csv2("podatki/2a2.csv",
+                        col_names=c("COMPANYNAME","GROSS SALES"),
+                        skip=1, na="-",
+                        locale=locale(encoding="Windows-1250"))
+
+a3 <- read_csv2("podatki/3.csv",
+                col_names=c("COMPANYNAME","DO_10"),
+                skip=1, na="-",
+                locale=locale(encoding="Windows-1250"))
+
